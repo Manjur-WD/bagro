@@ -12055,10 +12055,10 @@ footer .terms-privacy a {
 
 .category-wise-products .circle-main {
   width: 600px !important;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .category-wise-products .circuler-design-product-area {
   animation: rotateInf 35s linear infinite;
@@ -12066,7 +12066,12 @@ footer .terms-privacy a {
 }
 
 .swiper {
+<<<<<<< HEAD
   padding-top: 150px;
+=======
+ height: 70vh;
+    padding-top: 100px;
+>>>>>>> 768d0cad830b2ae7b1bee61a34a7b6ae4275bca8
 }
 
 .swiper-slide {
@@ -12077,7 +12082,11 @@ footer .terms-privacy a {
 
 .swiper-slide.swiper-slide-next {
   filter: blur(0);
+<<<<<<< HEAD
   transform: translateY(20%) scale(2); /* Zoom in active (middle) slide */
+=======
+  transform: translateY(35%) scale(1.8); /* Zoom in active (middle) slide */
+>>>>>>> 768d0cad830b2ae7b1bee61a34a7b6ae4275bca8
 }
 
 .swiper-slide.swiper-slide-active {
