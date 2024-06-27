@@ -12110,6 +12110,24 @@ footer .terms-privacy a {
   content: "";
 }
 
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100; /* Ensure button is above other elements */
+  cursor: pointer;
+  opacity: 0; /* Initially hide the button */
+  transition: opacity 0.5s ease;
+}
+#scrollToTopButton img {
+  width: 40px;
+  filter: drop-shadow(5px 5px 10px black);
+}
+
+#scrollToTopButton:hover {
+  opacity: 1; /* Show button on hover */
+}
+
 @media (max-width: 600px) {
   .category-boxes p {
     font-size: 0.5rem;

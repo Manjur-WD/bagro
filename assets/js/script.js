@@ -87,3 +87,25 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 });
 
+
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+window.addEventListener("scroll", function() {
+  const scrollPosition = window.scrollY;
+
+  // Show button when scrolled down a certain amount (adjust as needed)
+  if (scrollPosition > 100) {
+    scrollToTopButton.style.opacity = 1;
+  } else {
+    scrollToTopButton.style.opacity = 0;
+  }
+});
+
+scrollToTopButton.addEventListener("click", function() {
+  // Scroll to the top smoothly with animation
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
