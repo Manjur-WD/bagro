@@ -11886,12 +11886,19 @@ textarea.form-control-lg {
 }
 
 .category-boxes p {
+  font-size: 0.8rem !important;
   padding: 1rem 2rem;
   border: 1px solid #c63d2f;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 .category-boxes p:hover {
+  background-color: #c63d2f;
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+.category-boxes p.activeCat {
   background-color: #c63d2f;
   color: white;
 }
@@ -11903,12 +11910,32 @@ textarea.form-control-lg {
   object-position: center;
 }
 
+.bubbles1 {
+  position: absolute;
+  width: 15%;
+  left: 10px;
+  top: 20px;
+}
+
+.bubbles2 {
+  position: absolute;
+  width: 15%;
+  right: 10px;
+  bottom: 20px;
+}
+
+.blog .bubbles1 {
+  position: absolute;
+  width: 30%;
+  left: 0;
+  top: -100px;
+}
+
 .sesame-product-wrapper {
   width: 80%;
   margin: auto;
 }
 .sesame-product-wrapper .sesame-product {
-  width: 70%;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -11916,12 +11943,18 @@ textarea.form-control-lg {
   filter: drop-shadow(5px 9px 6px gray);
   animation: bounceUp 3s linear infinite;
 }
+.sesame-product-wrapper .sesame-product-1 {
+  width: 45%;
+}
+.sesame-product-wrapper .sesame-product-2 {
+  width: 60%;
+}
 .sesame-product-wrapper .circuler-design {
   animation: rotateInf 35s linear infinite;
 }
 .sesame-product-wrapper .sesame-product-desc span {
   font-size: 7vmin;
-  font-weight: 800;
+  font-weight: 600;
   color: #c63d2f;
 }
 
@@ -12033,7 +12066,6 @@ footer .terms-privacy a {
 }
 
 .swiper {
-  height: 80vh;
   padding-top: 150px;
 }
 
@@ -12045,7 +12077,7 @@ footer .terms-privacy a {
 
 .swiper-slide.swiper-slide-next {
   filter: blur(0);
-  transform: scale(1.8); /* Zoom in active (middle) slide */
+  transform: translateY(20%) scale(2); /* Zoom in active (middle) slide */
 }
 
 .swiper-slide.swiper-slide-active {
@@ -12102,6 +12134,9 @@ footer .terms-privacy a {
   100% {
     scale: 1;
   }
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=customBs.css.map */
