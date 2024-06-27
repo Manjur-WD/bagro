@@ -12022,10 +12022,10 @@ footer .terms-privacy a {
 
 .category-wise-products .circle-main {
   width: 600px !important;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .category-wise-products .circuler-design-product-area {
   animation: rotateInf 35s linear infinite;
@@ -12033,8 +12033,8 @@ footer .terms-privacy a {
 }
 
 .swiper {
-  height: 80vh;
-  padding-top: 150px;
+ height: 70vh;
+    padding-top: 100px;
 }
 
 .swiper-slide {
