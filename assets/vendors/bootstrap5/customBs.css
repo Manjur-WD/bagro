@@ -12045,7 +12045,7 @@ footer .terms-privacy a {
 
 .swiper-slide.swiper-slide-next {
   filter: blur(0);
-  transform: transform(35%) scale(1.8); /* Zoom in active (middle) slide */
+  transform: translateY(35%) scale(1.8); /* Zoom in active (middle) slide */
 }
 
 .swiper-slide.swiper-slide-active {
